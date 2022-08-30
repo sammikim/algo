@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Average {
-    public static void main(String args) {
+    public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
 
@@ -12,6 +12,7 @@ public class Average {
        for(int i = 0; i < cNum.length; i++) {
            sum += cNum[i];
        }
-       System.out.println(sum);
+       int average = sum / cNum.length;
+       System.out.println(average);
     }
 }
